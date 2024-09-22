@@ -27,3 +27,8 @@ content  = tls_private_key.rsa_hk_new2.private_key_pem
 filename = var.hk12_key
 depends_on = [aws_key_pair.newkeypair]
 }
+
+output "key_pair_pem" {
+  value     = aws_key_pair.newkeypair2.public_key
+  sensitive = true
+}
