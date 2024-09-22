@@ -1,7 +1,7 @@
 resource "aws_instance" "my_instance_new1" {
   ami           = "ami-0ad21ae1d0696ad58" 
   instance_type = "t2.micro"
-  key_name      = aws_key_pair.ec2_key.key_name
+  key_name      = aws_key_pair.newkeypair.key_name
 
   tags = {
     Name = "MyEC2Instance"
