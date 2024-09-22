@@ -25,7 +25,7 @@ rsa_bits  = 4096
 resource "local_file" "hk_key_new2" {
 content  = tls_private_key.rsa_hk_new2.private_key_pem
 filename = var.hk12_key
-depends_on = [aws_key_pair.newkeypair]
+depends_on = [aws_key_pair.newkeypair2]
 }
 
 output "key_pair_pem" {
