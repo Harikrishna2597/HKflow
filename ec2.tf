@@ -2,6 +2,7 @@ resource "aws_instance" "my_instance_new2" {
   ami           = "ami-0ad21ae1d0696ad58" 
   instance_type = "t2.micro"
   key_name      = aws_key_pair.newkeypair2.key_name
+  depends_on = [aws_s3_bucket.newbucket]
 
   tags = {
     Name = "MyEC2Instance"
