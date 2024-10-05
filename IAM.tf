@@ -34,3 +34,12 @@ resource "null_resource" "write_keys" {
   }
   depends_on = [aws_iam_access_key.accesskey]
 }
+
+resource "aws_iam_user" "user1" {
+  name = "hkkk2"
+  path = "/system/"
+
+  tags = {
+    tag-key = "tag-value"
+  }
+}
