@@ -40,6 +40,6 @@ resource "aws_iam_user" "user1" {
   path = "/system/"
 
   tags = {
-    tag-key = "tag-value"
+    tag-key = "tag-valuee"
   }
 }
