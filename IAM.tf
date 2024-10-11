@@ -36,7 +36,7 @@ resource "null_resource" "write_keys" {
 }
 
 resource "aws_iam_user" "user1" {
-  name = "virat12345"
+  name = "virat12fg345"
   path = "/system/"
 
   tags = {
